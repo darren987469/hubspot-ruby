@@ -10,6 +10,7 @@ SimpleCov.start do
   add_filter "/.bundle/"
 end
 
+require 'dotenv/load'
 require 'rspec'
 require 'rspec/its'
 require 'webmock/rspec'
