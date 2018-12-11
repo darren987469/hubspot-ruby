@@ -25,6 +25,8 @@ RSpec.configure do |config|
     Hubspot::Config.reset!
   end
 
+  config.filter_run_when_matching :focus
+
   config.extend CassetteHelper
   config.extend TestsHelper
 end
